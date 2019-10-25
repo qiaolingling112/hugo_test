@@ -18,8 +18,8 @@
   <link rel="stylesheet" href="plugins/slick/slick.css ">
 
   <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css ">
-
-
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/modals.css">
   <!-- Main Stylesheet -->
 
   <link rel="stylesheet" href="css/style.min.css" integrity="" media="screen">
@@ -36,7 +36,7 @@
 <!-- preloader end -->
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="https://themes.gohugo.io//theme/kross-hugo-portfolio-template/">圣贤山川（北京）科技有限公司</a>
+    <a class="navbar-brand" href="#">圣贤山川（北京）科技有限公司</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
             aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -138,7 +138,7 @@
 
         <p class="font-secondary lead text-dark">圣贤山川（北京）科技有限公司是一家以互联网平台运营、WEB应用开发、软件开发、大数据分析、移动互联网通讯技术、云计算、营销推广、技术培训等为核心的科技公司。公司以技术研发创新为主导，把握互联网行业的需求，利用互联网核心技术为客户提供稳定、可靠、功能优异的软硬一体的行业应用解决方案。公司前身已推出十几个行业的解决方案，跟多家企事业单位合作，已经广泛应用于加盟连锁店、医院、商场、咖啡厅、KTV、商业地产、旅游景点、快捷酒店等行业</p>
 
-        <a href="https://themes.gohugo.io/about" class="btn btn-transparent">了解更多</a>
+        <a href="categories/index.html" class="btn btn-transparent">了解更多</a>
 
 
       </div>
@@ -411,11 +411,11 @@
     <div class="row shuffle-wrapper">
 
       <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="static/images/portfolio/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#">view project</a>
+        <div class="position-relative rounded hover-wrapper portfolio-box portfolio-link">
+          <img src="static/images/portfolio/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block img-responsive">
+          <div class="hover-overlay portfolio-box-caption">
+            <div class="hover-content portfolio-box-caption-content">
+              <a class="btn btn-light btn-sm project-category text-faded" href="#portfolioModal1"   data-toggle="modal" id="hidden">view project</a>
             </div>
           </div>
         </div>
@@ -423,10 +423,10 @@
 
       <div class="col-lg-4 col-6 mb-4 shuffle-item">
         <div class="position-relative rounded hover-wrapper">
-          <img src="static/images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+          <img src="static/images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block img-responsive">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#">view project</a>
+              <a class="btn btn-light btn-sm" href="#portfolioModal2" data-toggle="modal"  id="hidden">view project</a>
             </div>
           </div>
         </div>
@@ -434,10 +434,10 @@
 
       <div class="col-lg-4 col-6 mb-4 shuffle-item">
         <div class="position-relative rounded hover-wrapper">
-          <img src="static/images/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+          <img src="static/images/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block img-responsive">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#">view project</a>
+              <a class="btn btn-light btn-sm" href="#portfolioModal3" data-toggle="modal"  id="hidden">view project</a>
             </div>
           </div>
         </div>
@@ -445,10 +445,10 @@
 
       <div class="col-lg-4 col-6 mb-4 shuffle-item">
         <div class="position-relative rounded hover-wrapper">
-          <img src="static/images/portfolio/item-4.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+          <img src="static/images/portfolio/item-4.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block img-responsive">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#">view project</a>
+              <a class="btn btn-light btn-sm" href="#portfolioModal4" data-toggle="modal"  id="hidden">view project</a>
             </div>
           </div>
         </div>
@@ -456,10 +456,10 @@
 
       <div class="col-lg-4 col-6 mb-4 shuffle-item">
         <div class="position-relative rounded hover-wrapper">
-          <img src="static/images/portfolio/item-5.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+          <img src="static/images/portfolio/item-5.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block img-responsive">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#">view project</a>
+              <a class="btn btn-light btn-sm" href="#portfolioModal5" data-toggle="modal"  id="hidden">view project</a>
             </div>
           </div>
         </div>
@@ -468,12 +468,6 @@
     </div>
   </div>
 </section>
-
-
-
-
-
-
 <section class="section bg-primary position-relative testimonial-bg-shapes">
   <div class="container">
     <div class="row">
@@ -528,6 +522,12 @@
 
 <section class="section pb-0">
   <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">合作企业</h2>
+      </div>
+    </div>
+
     <div class="client-logo-slider d-flex align-items-center">
 
       <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid" src="static/images/clients-logo/client-logo-1.png" alt="client-logo"></a>
@@ -553,9 +553,303 @@
     </div>
   </div>
 </section>
+<div class="portfolio-modal fade  modal" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-backdrop  fade in" style="height: 969px;"></div>
+  <div class="modal-content">
+    <!--<div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body" style="overflow-x: hidden">
+
+            <h2>pc端项目案例</h2>
 
 
+            <hr class="star-primary">
 
+            <img src="static/images/pc.jpg" class="img-responsive img-centered" alt="">
+
+            <p>该项目有效整合了商业楼宇，土地，商铺，厂房，仓库，园区等租赁信息，对每一条项目信息进行严格审核，实地认证，在录入项目数据库，将项目数据库和需求数据库进行最优配对，为每一个选址客户提高选址效率，降低选址成本。</p>
+
+
+            <ul class="list-inline item-details">
+
+              <li>技术:
+                <strong><a href="#"> Bootstrap</a></strong>
+              </li>
+
+              <!--<li>日期:
+                <strong><a href="#">2014-07-05</a></strong>
+              </li>-->
+
+
+              <li>类别:
+                <strong><a href="#">Web 项目</a></strong>
+              </li>
+
+            </ul>
+
+
+           <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Close" id="btn"><i class="fa fa-times"></i>Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="portfolio-modal fade modal" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-backdrop fade in" style="height: 883px;"></div>
+  <div class="modal-content">
+    <!--<div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body"  style="overflow-x: hidden">
+
+            <h2>移动端项目案例</h2>
+            <hr class="star-primary">
+
+            <img src="static/images/app.jpg" class="img-responsive img-centered" alt="">
+
+            <p>P网（powex）是以数字资产为核心业务的交易平台，为了保障用户交易的便捷性，依据平台网站建立全新的手持终端APP，确保用户能不受时间和空间的影响，了解最新市场动态，实时进行线上交易；行业资讯及媒体报道，为用户提供最新的新闻资讯，让用户能及时了解市场行情。</p>
+
+
+            <ul class="list-inline item-details">
+
+              <li>技术:
+                <strong><a href="#">Vue</a></strong>
+              </li>
+
+
+              <!--<li>日期:
+                <strong><a href="#">2014-07-06</a></strong>
+              </li>-->
+
+
+              <li>类别:
+                <strong><a href="#">app 项目</a></strong>
+              </li>
+
+            </ul>
+
+
+          <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Close" id="btn_item"><i class="fa fa-times"></i>Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="portfolio-modal fade  modal" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-backdrop fade in" style="height: 883px;"></div>
+  <div class="modal-content">
+   <!-- <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body" style="overflow-x:hidden">
+
+            <h2>小程序项目案例</h2>
+
+
+            <hr class="star-primary">
+
+            <img src="static/images/xcx.png" class="img-responsive img-centered" alt="">
+
+            <p>小程序背靠微信11亿用户群体，比app开发周期短，快速上线，无需下载，即用即走，牢牢锁住流量，完美解决线上线下流量问题</p>
+
+
+            <ul class="list-inline item-details">
+
+              <li>技术:
+                <strong><a href="#">wx</a></strong>
+              </li>
+
+
+             <!-- <li>日期:
+                <strong><a href="#">2014-07-07</a></strong>
+              </li>-->
+
+
+              <li>类别:
+                <strong><a href="#">小程序项目</a></strong>
+              </li>
+
+            </ul>
+
+
+           <button type="button" class="btn btn-default" data-dismiss="modal" id="btn_team"><i class="fa fa-times"></i>Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="portfolio-modal fade  modal" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-content">
+  <!--  <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body"  style="overflow-x: hidden">
+
+            <h2>H5项目案例</h2>
+
+
+            <hr class="star-primary">
+
+            <img src="static/images/h5.png" class="img-responsive img-centered" alt="">
+
+            <p>欢快钢琴是一款休闲钢琴类休闲益智H5小游戏，经典玩法，简单上手，伴随着音乐节奏点击黑块，弹出美妙的音乐。欢快钢琴作为简单易玩，老少咸宜的游戏，可谓居家旅行+上班打发无聊得利器，会更好的提升玩家的兴趣。游戏支持助力模式，帮你实现更多营销计划，提高用户使用率！提升品牌传播能力！</p>
+
+
+            <ul class="list-inline item-details">
+
+              <li>技术:
+                <strong><a href="#">h5</a></strong>
+              </li>
+
+
+             <!-- <li>日期:
+                <strong><a href="#">2014-07-08</a></strong>
+              </li>-->
+
+
+              <li>类别Category:
+                <strong><a href="#">h5项目</a></strong>
+              </li>
+
+            </ul>
+
+
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="btn"><i class="fa fa-times"></i>Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="portfolio-modal fade  modal" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-content">
+  <!--  <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body"  style="overflow-x: hidden">
+
+            <h2>Android</h2>
+
+
+            <hr class="star-primary">
+
+            <img src="static/images/andorid.png" class="img-responsive img-centered" alt="">
+
+            <p>地理杂志阅读类 Android App，项目采用 LiveData + Room + RXJava2 + Retrofit + OKHttp + Material Design + Base + Glide 构建.</p>
+
+
+            <ul class="list-inline item-details">
+
+              <li>技术:
+                <strong><a href="#">Android</a></strong>
+              </li>
+
+
+             <!-- <li>日期:
+                <strong><a href="#">2018-07-09</a></strong>
+              </li>-->
+
+
+              <li>类别:
+                <strong><a href="#">android 项目</a></strong>
+              </li>
+
+            </ul>
+
+
+         <button type="button" class="btn btn-default" data-dismiss="modal" id="btn_bt"><i class="fa fa-times"></i>Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="portfolio-modal fade  modal" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-content">
+  <!--  <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body"  style="overflow-x: hidden">
+
+            <h2>ios项目案例</h2>
+
+
+            <hr class="star-primary">
+
+            <img src="static/images/ios.png" class="img-responsive img-centered" alt="">
+
+            <p>高效研发模式，电商，分销，零售，服务预订和内容付费app一周上线</p>
+
+
+            <ul class="list-inline item-details">
+
+              <li>技术:
+                <strong><a href="#">ios</a></strong>
+              </li>
+
+
+              <!--<li>日期:
+                <strong><a href="#">2018-09-10</a></strong>
+              </li>-->
+
+
+              <li>类别:
+                <strong><a href="#">ios 项目</a></strong>
+              </li>
+
+            </ul>
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="btn_fi"><i class="fa fa-times"></i>Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!--
 <section class="section">
   <div class="container">
@@ -630,7 +924,7 @@
                         placeholder="请输入您想说的话"></textarea>
             </div>
             <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">提交</button>
+              <button class="btn btn-primary w-100" id="send">提交</button>
             </div>
           </form>
         </div>
@@ -662,7 +956,7 @@
     </div>
   </div>
   <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">发行于 <a href="https://themefisher.com/best-hugo-themes">2019-09-23</a></p>
+    <p class="mb-0 text-light">发行于 <a href="#">2019-09-23</a></p>
   </div>
 </footer>
 
@@ -670,7 +964,7 @@
 <!-- Google Map API -->
 <script src="https://themes.gohugo.io/theme/kross-hugo-portfolio-template/"></script>
 <!-- JS Plugins -->
-
+<script src="plugins/jQuery/jquery.js"></script>
 <script src="plugins/jQuery/jquery.min.js"></script>
 
 <script src="plugins/bootstrap/bootstrap.min.js"></script>
@@ -678,7 +972,7 @@
 <script src="plugins/slick/slick.min.js"></script>
 
 <script src="plugins/shuffle/shuffle.min.js"></script>
-
+<script src="js/bootstrap.js"></script>
 <!-- Main Script -->
 
 <script src="js/script.min.js"></script>
@@ -690,6 +984,19 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', 'Your ID', 'auto');
   ga('send', 'pageview');
+
+  $("#hidden").click(function () {
+    $("body").addClass("modal-open");
+  })
+  $("#btn,#btn_item,#btn_team,#btn_bt,#btn_fi").click(function () {
+    $(".portfolio-modal").fadeOut();
+    $(".modal-backdrop").hide();
+    $("body").removeClass("modal-open")
+  })
+  $("#send").click(function(){
+    alert("提交成功")
+  })
+
 </script>
 </body>
 </html>
